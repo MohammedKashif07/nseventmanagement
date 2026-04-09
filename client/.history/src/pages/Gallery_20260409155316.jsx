@@ -5,6 +5,7 @@ import { Camera, Play, ArrowUpRight, Gift, Images, Film } from 'lucide-react';
 // --- ASSET IMPORTS ---
 import HMI1 from '../assets/image/HMI1.jpg';
 import MMESIL1 from '../assets/image/MMESIL1.jpg';
+import MMV1 from '../assets/image/MMV1.mp4';
 import MMH2 from '../assets/image/MMH2.jpg';
 import MMH3 from '../assets/image/MMH3.jpg';
 import NWAP1 from '../assets/image/NWAP1.jpg';
@@ -14,13 +15,15 @@ const Gallery = () => {
     const [filter, setFilter] = useState('all');
 
     const items = [
-        { id: 1, type: 'image', src: MMESIL1, title: 'Premium Bottle Branding' },
-        { id: 2, type: 'image', src: HMI1, title: 'Wedding Setup Excellence' },
-        { id: 3, type: 'image', src: MMH3, title: 'Branded Essentials' },
-        { id: 4, type: 'image', src: MMH2, title: 'Private Showcase' },
-        { id: 5, type: 'image', src: MMH3, title: 'Event Logistics' },
-        { id: 6, type: 'image', src: NWAP2, title: 'VIT Chancellor' },
-        { id: 7, type: 'image', src: NWAP1, title: 'VIT Chancellor' },
+        { id: 1, type: 'video', src: MMV1, poster: HMI1, title: 'Grand Scale Logistics' },
+        { id: 2, type: 'image', src: MMESIL1, title: 'Premium Bottle Branding' },
+        { id: 3, type: 'image', src: HMI1, title: 'Wedding Setup Excellence' },
+        { id: 4, type: 'video', src: MMV1, poster: HMI1, title: 'Corporate Gala' },
+        { id: 5, type: 'image', src: MMH3, title: 'Branded Essentials' },
+        { id: 6, type: 'image', src: MMH2, title: 'Private Showcase' },
+        { id: 7, type: 'image', src: MMH3, title: 'Event Logistics' },
+        { id: 8, type: 'image', src: NWAP2, title: 'VIT Chancellor' },
+        { id: 9, type: 'image', src: NWAP1, title: 'VIT Chancellor' },
     ];
 
     const filteredItems = filter === 'all' ? items : items.filter(i => i.type === filter);
