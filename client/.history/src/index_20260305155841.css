@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Prevents the fixed navbar from covering the top of your sections */
+section {
+  scroll-margin-top: 80px;
+}
+
+:root {
+  font-family: "Inter", sans-serif;
+}
