@@ -25,7 +25,7 @@ const Services = () => {
         { title: "Tea Cup", img: "/images/110mlTeaCup.jpg" },
         { title: "Tissue", img: "/images/Tissue.jpg" },
         { title: "Zarda Box Black", img: "/images/50mlZardaBoxBlack.jpg" },
-        { title: "Zarda Box White", img: "/images/50mlZardaBoxwhite.jpg" },
+        { title: "Zarda Box White", img: "/images/50mlZardaBoxWhite.jpg" },
         { title: "Container 500ml", img: "/images/Container500mlblack.jpg" },
         { title: "Container 2500ml", img: "/images/Container2500mlwhite.jpg" },
         { title: "Plate Big", img: "/images/PremiumPlateBig.jpg" },

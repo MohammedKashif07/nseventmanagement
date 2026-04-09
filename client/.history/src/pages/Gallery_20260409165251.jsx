@@ -8,11 +8,11 @@ const Gallery = () => {
     const items = [
         { id: 1, type: 'image', src: '/images/MMESIL1.jpg', title: 'Premium Bottle Branding' },
         { id: 2, type: 'image', src: '/images/HMI1.jpg', title: 'Wedding Setup Excellence' },
-        { id: 3, type: 'image', src: '/images/MMH3.JPG', title: 'Branded Essentials' },
-        { id: 4, type: 'image', src: '/images/MMH2.JPG', title: 'Private Showcase' },
-        { id: 5, type: 'image', src: '/images/MMH3.JPG', title: 'Event Logistics' },
-        { id: 6, type: 'image', src: '/images/NWAP2.JPG', title: 'VIT Chancellor' },
-        { id: 7, type: 'image', src: '/images/NWAP1.JPG', title: 'VIT Chancellor' },
+        { id: 3, type: 'image', src: '/images/MMH3.jpg', title: 'Branded Essentials' },
+        { id: 4, type: 'image', src: '/images/MMH2.jpg', title: 'Private Showcase' },
+        { id: 5, type: 'image', src: '/images/MMH3.jpg', title: 'Event Logistics' },
+        { id: 6, type: 'image', src: '/images/NWAP2.jpg', title: 'VIT Chancellor' },
+        { id: 7, type: 'image', src: '/images/NWAP1.jpg', title: 'VIT Chancellor' },
     ];
 
     const filteredItems = filter === 'all' ? items : items.filter(i => i.type === filter);
