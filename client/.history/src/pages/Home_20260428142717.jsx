@@ -4,9 +4,8 @@ import Navbar from '../components/layout/Navbar';
 import Services from './Services';
 import Gallery from './Gallery';
 import Contact from './Contact';
-import Package from './Catering';
-import { ChevronDown, Sparkles } from 'lucide-react';
 import Catering from './Catering';
+import { ChevronDown, Sparkles } from 'lucide-react';
 
 const Home = () => {
     return (
@@ -46,7 +45,7 @@ const Home = () => {
                         </span>
 
                         <h1 className="text-6xl md:text-8xl font-black text-white mb-6 tracking-tighter leading-tight">
-                            N<span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-cyan-300">s </span>E<span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-cyan-300">v</span>e<span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-cyan-300">n</span>t<span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-cyan-300">s</span>
+                            N<span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-cyan-300"> </span>E<span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-cyan-300">v</span>e<span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-cyan-300">n</span>t<span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-cyan-300">s</span>
                         </h1>
 
                         <p className="text-lg md:text-2xl text-blue-100/80 max-w-2xl mx-auto mb-10 font-medium leading-relaxed">
@@ -97,11 +96,6 @@ const Home = () => {
                 {/* Gallery Section */}
                 <section id="gallery" className="relative w-full m-0 p-0 block bg-white overflow-hidden -mt-1">
                     <Gallery />
-                </section>
-
-                {/* Gallery Section */}
-                <section id="package" className="relative w-full m-0 p-0 block bg-white overflow-hidden -mt-1">
-                    <Catering />
                 </section>
 
                 {/* Contact Section */}

@@ -6,7 +6,6 @@ import Gallery from './Gallery';
 import Contact from './Contact';
 import Package from './Catering';
 import { ChevronDown, Sparkles } from 'lucide-react';
-import Catering from './Catering';
 
 const Home = () => {
     return (
@@ -97,11 +96,6 @@ const Home = () => {
                 {/* Gallery Section */}
                 <section id="gallery" className="relative w-full m-0 p-0 block bg-white overflow-hidden -mt-1">
                     <Gallery />
-                </section>
-
-                {/* Gallery Section */}
-                <section id="package" className="relative w-full m-0 p-0 block bg-white overflow-hidden -mt-1">
-                    <Catering />
                 </section>
 
                 {/* Contact Section */}
