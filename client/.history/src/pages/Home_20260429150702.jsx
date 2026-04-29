@@ -50,7 +50,7 @@ const Home = () => {
                         </h1>
 
                         <p className="text-lg md:text-2xl text-blue-100/80 max-w-2xl mx-auto mb-10 font-medium leading-relaxed">
-                            Transforming your vision into <span className="text-white border-b border-blue-400">extraordinary realities</span>.From concept to execution, we manage it all.
+                            Transforming your vision into <span className="text-white border-b border-blue-400">extraordinary realities.</span>From concept to execution, we manage it all.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-5 justify-center items-center">
@@ -151,7 +151,6 @@ const Home = () => {
                             <li><a href="#home" className="hover:text-white transition">Home</a></li>
                             <li><a href="#services" className="hover:text-white transition">Our Services</a></li>
                             <li><a href="#gallery" className="hover:text-white transition">Gallery</a></li>
-                            <li><a href="#package" className="hover:text-white transition">Package</a></li>
                             <li><a href="#contact" className="hover:text-white transition">Contact Us</a></li>
                         </ul>
                     </div>

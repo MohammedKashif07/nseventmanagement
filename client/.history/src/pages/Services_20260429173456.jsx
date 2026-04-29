@@ -136,12 +136,7 @@ const Services = () => {
                     {/* CATALOG TOGGLE BUTTON */}
                     <div className="mt-16 flex justify-center">
                         {/* Change catelog to catalog */}
-                        <Link
-                            to="/productcatalog"
-                            className="flex items-center gap-2 px-8 py-4 bg-white border-2 border-slate-200 text-slate-700 rounded-2xl text-xs font-black uppercase tracking-widest hover:border-blue-600 hover:text-blue-600 transition-all shadow-sm hover:shadow-lg"
-                        >
-                            Browse Full Catalog <ArrowRight size={16} />
-                        </Link>
+                        <Link to="/productcatalog">Browse Full Catalog</Link>
                     </div>
                 </div>
             </section>

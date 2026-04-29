@@ -151,7 +151,6 @@ const Home = () => {
                             <li><a href="#home" className="hover:text-white transition">Home</a></li>
                             <li><a href="#services" className="hover:text-white transition">Our Services</a></li>
                             <li><a href="#gallery" className="hover:text-white transition">Gallery</a></li>
-                            <li><a href="#package" className="hover:text-white transition">Package</a></li>
                             <li><a href="#contact" className="hover:text-white transition">Contact Us</a></li>
                         </ul>
                     </div>

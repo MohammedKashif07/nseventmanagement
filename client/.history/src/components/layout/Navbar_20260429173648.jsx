@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useLocation, useNavigate, Link } from 'react-router-dom';
 
 const Navbar = () => {
     const [scrolled, setScrolled] = useState(false);
@@ -8,20 +7,23 @@ const Navbar = () => {
     const [lastScrollY, setLastScrollY] = useState(0);
     const [isOpen, setIsOpen] = useState(false);
 
-    const location = useLocation();
-    const navigate = useNavigate();
-
     useEffect(() => {
         const handleScroll = () => {
             const currentScrollY = window.scrollY;
+
+            // 1. Determine if background should be glassmorphism
             setScrolled(currentScrollY > 50);
 
+            // 2. Hide/Show logic
             if (currentScrollY > lastScrollY && currentScrollY > 100) {
+                // Scrolling Down - Hide
                 setVisible(false);
-                setIsOpen(false);
+                setIsOpen(false); // Close mobile menu if user scrolls down
             } else {
+                // Scrolling Up - Show
                 setVisible(true);
             }
+
             setLastScrollY(currentScrollY);
         };
 
@@ -29,36 +31,25 @@ const Navbar = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, [lastScrollY]);
 
-    // SMART NAVIGATION LOGIC
-    const handleNavClick = (e, targetId) => {
-        // If we are NOT on the home page, redirect to home first with the hash
-        if (location.pathname !== '/') {
-            e.preventDefault();
-            navigate(`/#${targetId}`);
-            setIsOpen(false);
-        } else {
-            // If on home page, mobile menu should close but default anchor link works
-            setIsOpen(false);
-        }
-    };
-
     return (
         <div className="fixed top-0 w-full flex justify-center z-50 px-1">
             <motion.nav
+                // This controls the disappear/reappear animation
                 initial={{ y: 0 }}
                 animate={{ y: visible ? 0 : -120 }}
                 transition={{ duration: 0.3, ease: "easeInOut" }}
+
                 className={`flex items-center justify-between w-full max-w-8xl px-6 py-3 transition-all duration-500 rounded-1xl border border-white/20 ${scrolled
                     ? "bg-white/70 backdrop-blur-xl shadow-[0_8px_32px_0_rgba(31,38,135,0.15)] scale-95"
                     : "bg-white/80 backdrop-blur-md"
                     }`}
             >
                 {/* Brand Logo */}
-                <Link to="/" onClick={(e) => handleNavClick(e, 'home')} className="group cursor-pointer">
+                <div className="group cursor-pointer">
                     <h1 className="text-1xl font-black tracking-lighter text-blue-950/70 flex items-center">
                         Ns Event Management <span className="text-blue-600 ml-1 group-hover:rotate-12 transition-transform duration-300">✦</span>
                     </h1>
-                </Link>
+                </div>
 
                 {/* Right Side Group: Menu + CTA */}
                 <div className="flex items-center gap-8">
@@ -66,8 +57,7 @@ const Navbar = () => {
                         {['Home', 'Services', 'Gallery', 'Package'].map((item) => (
                             <a
                                 key={item}
-                                href={`/#${item.toLowerCase()}`}
-                                onClick={(e) => handleNavClick(e, item.toLowerCase())}
+                                href={`#${item.toLowerCase()}`}
                                 className="text-sm font-bold text-blue-950/70 hover:text-blue-600 transition-all hover:tracking-widest"
                             >
                                 {item}
@@ -78,7 +68,6 @@ const Navbar = () => {
                     <div className="flex items-center gap-4">
                         <a
                             href="#package"
-                            onClick={(e) => handleNavClick(e, 'contact')}
                             className="px-6 py-2.5 bg-blue-950 text-white text-xs font-bold uppercase tracking-tighter rounded-xl hover:bg-blue-600 transition-all hover:-translate-y-1 active:scale-95"
                         >
                             Start Planning
@@ -105,11 +94,11 @@ const Navbar = () => {
                         exit={{ opacity: 0, scale: 0.95, y: -20 }}
                         className="absolute top-24 left-4 right-4 bg-white/95 backdrop-blur-2xl p-8 rounded-3xl border border-blue-100 shadow-2xl md:hidden flex flex-col items-center gap-6"
                     >
-                        {['Home', 'Services', 'Gallery', 'Package', 'Contact'].map((item) => (
+                        {['Home', 'Services', 'Gallery', 'Contact'].map((item) => (
                             <a
                                 key={item}
-                                href={`/#${item.toLowerCase()}`}
-                                onClick={(e) => handleNavClick(e, item.toLowerCase())}
+                                href={`#${item.toLowerCase()}`}
+                                onClick={() => setIsOpen(false)}
                                 className="text-2xl font-black text-blue-950 hover:text-blue-600"
                             >
                                 {item}

@@ -77,7 +77,7 @@ const Navbar = () => {
 
                     <div className="flex items-center gap-4">
                         <a
-                            href="#package"
+                            href="#contact"
                             onClick={(e) => handleNavClick(e, 'contact')}
                             className="px-6 py-2.5 bg-blue-950 text-white text-xs font-bold uppercase tracking-tighter rounded-xl hover:bg-blue-600 transition-all hover:-translate-y-1 active:scale-95"
                         >

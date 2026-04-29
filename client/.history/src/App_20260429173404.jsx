@@ -1,21 +1,20 @@
+// src/App.jsx
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/layout/Navbar';
 import Home from './pages/Home';
-import ProductCatalog from './pages/ProductCatalog'; // Import your new page
+import ProductCatalog from './pages/ProductCatalog';
 
 function App() {
   return (
     <Router>
-      <Navbar />
       <Routes>
-        {/* The main landing page */}
+        {/* This is your landing page */}
         <Route path="/" element={<Home />} />
 
-        {/* The dedicated catalog page */}
+        {/* This is your new Catalog page */}
         <Route path="/productcatalog" element={<ProductCatalog />} />
 
-        {/* Fallback: redirect unknown routes to home */}
+        {/* This handles any typos and sends users back home */}
         <Route path="*" element={<Home />} />
       </Routes>
     </Router>

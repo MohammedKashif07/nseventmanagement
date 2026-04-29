@@ -7,6 +7,7 @@ import Contact from './Contact';
 import Package from './Catering';
 import { ChevronDown, Sparkles } from 'lucide-react';
 import Catering from './Catering';
+import ProductCatelog from './ProductCatelog';
 
 const Home = () => {
     return (

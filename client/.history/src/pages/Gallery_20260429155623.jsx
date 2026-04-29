@@ -53,7 +53,7 @@ const Gallery = () => {
                             The NS Archive
                         </motion.span>
                         <h1 className="text-5xl md:text-7xl font-black text-slate-900 tracking-tighter mb-6 uppercase italic">
-                            Showcase <span className="text-blue-600 not-italic font-light">Vault</span>
+                            Showcase<span className="text-blue-600 not-italic font-light">Vault</span>
                         </h1>
                     </div>
 

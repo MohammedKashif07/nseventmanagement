@@ -97,7 +97,10 @@ const CateringSupplies = () => {
                                         <ShieldCheck size={14} className="text-green-500" />
                                         Verified Premium Quality
                                     </div>
-                                    <button onClick={() => handleConsult(pkg)} className="w-full py-4 bg-[#06065a] text-white rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-blue-600 shadow-lg active:scale-95 transition-all flex items-center justify-center gap-2">
+                                    <button
+                                        onClick={() => handleConsult(pkg)}
+                                        className="w-full py-4 bg-[#06065a] ... transition-all flex items-center justify-center gap-2"
+                                    >
                                         SELECT & CONSULT <ArrowRight size={14} />
                                     </button>
                                 </div>

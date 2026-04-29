@@ -168,7 +168,7 @@ const Contact = () => {
                             <input
                                 type="email"
                                 value={formData.email}
-                                placeholder="name@gmail.com"
+                                placeholder="name@company.com"
                                 className="w-full p-4 bg-slate-50 border border-slate-200 rounded-2xl outline-none focus:bg-white focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all font-medium"
                                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                                 required

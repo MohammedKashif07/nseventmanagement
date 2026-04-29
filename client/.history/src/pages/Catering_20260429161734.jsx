@@ -6,17 +6,6 @@ import { cateringPackages, supplyPackages } from '../data/packagesData';
 const CateringSupplies = () => {
     const [view, setView] = useState('catering');
 
-    const handleConsult = (pkg) => {
-        const phoneNumber = "918667281229"; // Your business number
-        const message = `Hi NS Event Management, I'm interested in the *${pkg.name}* priced at ₹${pkg.price}. I'd like to consult with you regarding this package.`;
-
-        // Encode the message for the URL
-        const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-
-        // Open in new tab
-        window.open(whatsappUrl, '_blank');
-    };
-
     return (
         <section className="py-24 bg-white font-sans">
             <div className="container mx-auto px-4 max-w-7xl">
@@ -97,7 +86,7 @@ const CateringSupplies = () => {
                                         <ShieldCheck size={14} className="text-green-500" />
                                         Verified Premium Quality
                                     </div>
-                                    <button onClick={() => handleConsult(pkg)} className="w-full py-4 bg-[#06065a] text-white rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-blue-600 shadow-lg active:scale-95 transition-all flex items-center justify-center gap-2">
+                                    <button className="w-full py-4 bg-[#06065a] text-white rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-blue-600 shadow-lg active:scale-95 transition-all flex items-center justify-center gap-2">
                                         SELECT & CONSULT <ArrowRight size={14} />
                                     </button>
                                 </div>
