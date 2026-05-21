@@ -111,7 +111,7 @@ export const cateringChickenPackages = [
 export const supplyOnlyPackages = [
     {
         name: "Supply Only Package (400 Members)",
-        price: "6,999",
+        price: "7,999",
         features: [
             "300ml Water Bottles",
             "Premium Dining Rolls",
@@ -123,7 +123,7 @@ export const supplyOnlyPackages = [
     },
     {
         name: "Supply Only Package (600 Members)",
-        price: "9,999",
+        price: "10,999",
         features: [
             "300ml Water Bottles",
             "Premium Dining Rolls",
@@ -135,7 +135,7 @@ export const supplyOnlyPackages = [
     },
     {
         name: "Supply Only Package (800 Members)",
-        price: "13,999",
+        price: "15,999",
         features: [
             "300ml Water Bottles",
             "Premium Dining Rolls",
@@ -147,7 +147,7 @@ export const supplyOnlyPackages = [
     },
     {
         name: "Supply Only Package (1000 Members)",
-        price: "17,999",
+        price: "19,999",
         features: [
             "300ml Water Bottles",
             "Premium Dining Rolls",
@@ -164,12 +164,12 @@ export const supplyServicePackages = [
         name: "Supply + Service Package (400 Members)",
         price: "12,999",
         features: [
-            "300ml Water Bottles",
+            "300ml / 500ml Water Bottles",
             "Premium Dining Rolls",
             "Sweet Beeda Service",
             "High-Quality Tissues",
             "Sweet Cup Disposable",
-            "Container Box / Plate-set ",
+            "Container Box (Parcel Storage)",
             "Professional Manpower (Gents & Ladies)"
         ]
     },
@@ -177,12 +177,12 @@ export const supplyServicePackages = [
         name: "Supply + Service Package (600 Members)",
         price: "17,999",
         features: [
-            "300ml Water Bottles",
+            "300ml / 500ml Water Bottles",
             "Premium Dining Rolls",
             "Sweet Beeda Service",
             "High-Quality Tissues",
             "Sweet Cup Disposable",
-            "Container Box / Plate-set ",
+            "Container Box (Parcel Storage)",
             "Professional Manpower (Gents & Ladies)"
         ]
     },
@@ -190,25 +190,25 @@ export const supplyServicePackages = [
         name: "Supply + Service Package (800 Members)",
         price: "24,999",
         features: [
-            "300ml Water Bottles",
+            "300ml / 500ml Water Bottles",
             "Premium Dining Rolls",
             "Sweet Beeda Service",
             "High-Quality Tissues",
             "Sweet Cup Disposable",
-            "Container Box / Plate-set ",
+            "Container Box (Parcel Storage)",
             "Professional Manpower (Gents & Ladies)"
         ]
     },
     {
         name: "Supply + Service Package (1000 Members)",
-        price: "30,999",
+        price: "31,999",
         features: [
-            "300ml Water Bottles",
+            "300ml / 500ml Water Bottles",
             "Premium Dining Rolls",
             "Sweet Beeda Service",
             "High-Quality Tissues",
             "Sweet Cup Disposable",
-            "Container Box / Plate-set ",
+            "Container Box (Parcel Storage)",
             "Professional Manpower (Gents & Ladies)"
         ]
     }
